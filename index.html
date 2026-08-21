@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play Pocket Manager</title>
+<meta name="description" content="Play Pocket Manager — a six-a-side football card game for Android. Privacy policy and contact.">
+<meta name="robots" content="index, follow">
+<style>
+  :root{
+    --ground:#f4f6f7; --panel:#ffffff; --ink:#15191c; --ink2:#3d4750;
+    --dim:#5d6970; --rule:#d5dde1; --accent:#11633f; --accent-soft:#e2efe9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#14171a; --panel:#1b1f23; --ink:#eef2f4; --ink2:#c4ccd1;
+      --dim:#94a0a7; --rule:#2e353b; --accent:#5cc294; --accent-soft:#163024;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#14171a; --panel:#1b1f23; --ink:#eef2f4; --ink2:#c4ccd1;
+    --dim:#94a0a7; --rule:#2e353b; --accent:#5cc294; --accent-soft:#163024;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px; line-height:1.65; -webkit-text-size-adjust:100%;
+    display:flex; align-items:center; justify-content:center; min-height:100vh;
+  }
+  .card{
+    max-width:560px; width:100%; margin:0 auto;
+    padding:clamp(24px,6vw,44px) clamp(20px,5vw,40px);
+  }
+  h1{font-size:clamp(28px,6vw,38px); line-height:1.1; margin:0 0 6px; letter-spacing:-.02em;}
+  .tag{color:var(--dim); margin:0 0 26px; font-size:16px;}
+  p{color:var(--ink2);}
+  ul{list-style:none; padding:0; margin:26px 0 0;}
+  li{margin:0 0 10px;}
+  a.link{
+    display:block; background:var(--panel); border:1px solid var(--rule);
+    border-left:4px solid var(--accent); border-radius:10px;
+    padding:14px 16px; text-decoration:none; color:var(--ink); font-weight:600;
+  }
+  a.link:hover{border-color:var(--accent);}
+  a.link:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  a.link span{display:block; font-weight:400; font-size:14px; color:var(--dim); margin-top:2px;}
+  footer{margin-top:30px; padding-top:16px; border-top:1px solid var(--rule);
+         color:var(--dim); font-size:14px;}
+  footer a{color:var(--accent);}
+</style>
+</head>
+<body>
+<main class="card">
+  <h1>Play Pocket Manager</h1>
+  <p class="tag">A six-a-side football card game for Android.</p>
+
+  <p>Collect footballers, build a squad, manage chemistry and formation, play matches and climb
+  the pyramid. There are no adverts and nothing to buy inside the game — no card packs, no
+  coins, no advantages. Your first season is free, and one optional permanent unlock continues
+  the career.</p>
+
+  <ul>
+    <li>
+      <a class="link" href="privacy.html">Privacy Policy
+        <span>What the app stores, what it sends, and how to have data removed.</span></a>
+    </li>
+    <li>
+      <a class="link" href="mailto:buckminsterinteractive@gmail.com">Contact
+        <span>buckminsterinteractive@gmail.com</span></a>
+    </li>
+  </ul>
+
+  <footer>
+    <p>Buckminster Interactive, United Kingdom ·
+    <code>com.buckminsterinteractive.playpocketmanager</code></p>
+  </footer>
+</main>
+</body>
+</html>

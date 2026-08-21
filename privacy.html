@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Play Pocket Manager</title>
+<meta name="description" content="Privacy policy for the Play Pocket Manager Android app.">
+<meta name="robots" content="index, follow">
+<style>
+  :root{
+    --ground:#f4f6f7; --panel:#ffffff; --ink:#15191c; --ink2:#3d4750;
+    --dim:#5d6970; --rule:#d5dde1; --accent:#11633f; --accent-soft:#e2efe9;
+    --warn:#7a4a10; --warn-soft:#f6eada;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --ground:#14171a; --panel:#1b1f23; --ink:#eef2f4; --ink2:#c4ccd1;
+      --dim:#94a0a7; --rule:#2e353b; --accent:#5cc294; --accent-soft:#163024;
+      --warn:#dda96b; --warn-soft:#33270f;
+    }
+  }
+  :root[data-theme="dark"]{
+    --ground:#14171a; --panel:#1b1f23; --ink:#eef2f4; --ink2:#c4ccd1;
+    --dim:#94a0a7; --rule:#2e353b; --accent:#5cc294; --accent-soft:#163024;
+    --warn:#dda96b; --warn-soft:#33270f;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--ground); color:var(--ink);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px; line-height:1.65; -webkit-text-size-adjust:100%;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:clamp(20px,5vw,56px) clamp(16px,4vw,32px) 80px;}
+  header{border-bottom:2px solid var(--ink); padding-bottom:18px; margin-bottom:28px;}
+  h1{font-size:clamp(28px,5vw,40px); line-height:1.1; margin:0 0 10px; letter-spacing:-.02em;}
+  .sub{color:var(--dim); margin:0; font-size:15px;}
+  h2{font-size:clamp(20px,3vw,25px); margin:38px 0 12px; padding-bottom:6px;
+     border-bottom:1px solid var(--rule); letter-spacing:-.01em;}
+  h3{font-size:17px; margin:24px 0 8px;}
+  p,li{color:var(--ink2);}
+  ul,ol{padding-left:22px;}
+  li{margin:0 0 7px;}
+  strong{color:var(--ink); font-weight:650;}
+  code{font-family:ui-monospace,Consolas,"SF Mono",Menlo,monospace; font-size:.88em;
+       background:var(--accent-soft); color:var(--ink); padding:1px 5px; border-radius:4px;}
+  .box{background:var(--panel); border:1px solid var(--rule); border-radius:10px;
+       padding:16px 18px; margin:18px 0;}
+  .box.key{border-left:4px solid var(--accent); background:var(--accent-soft);}
+  .box.note{border-left:4px solid var(--warn); background:var(--warn-soft);}
+  .box p:first-child{margin-top:0;} .box p:last-child, .box ul:last-child{margin-bottom:0;}
+  .tw{overflow-x:auto; margin:16px 0;}
+  table{border-collapse:collapse; width:100%; min-width:460px; font-size:15px;}
+  th,td{text-align:left; padding:9px 12px; border-bottom:1px solid var(--rule); vertical-align:top;}
+  th{color:var(--dim); font-size:13px; text-transform:uppercase; letter-spacing:.05em;}
+  a{color:var(--accent);}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+  footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--rule);
+         color:var(--dim); font-size:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="sub"><strong>Play Pocket Manager</strong> for Android · Buckminster Interactive<br>
+  Last updated 19 August 2026</p>
+</header>
+
+<p>Play Pocket Manager is a single-player football card game. This policy explains, plainly, what
+the Android app stores, what it sends, and what you can do about it.</p>
+
+<div class="box key">
+  <p><strong>The short version.</strong> The app shows no adverts, contains no analytics or
+  tracking software, and asks for no account, name, email address or permissions. Your game is
+  saved on your device. It is also backed up automatically to an anonymous cloud save so you do
+  not lose your club. There is one optional purchase, handled entirely by Google Play — we never
+  see your card details.</p>
+</div>
+
+<h2>1. What is stored on your device</h2>
+
+<p>Your progress is kept in the app's own local storage. It never leaves your device except
+through the cloud save described in section 2.</p>
+
+<div class="tw">
+<table>
+  <thead><tr><th>What</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>Your club, squad, card collection, coins, season and career history</td><td>so the game can continue where you left off</td></tr>
+    <tr><td>Your settings — sound, music, theme, layout, bigger text, reduce motion</td><td>so your choices persist</td></tr>
+    <tr><td>A local play log of in-game events</td><td>used only for diagnosing problems on your own device. <strong>It is never transmitted.</strong></td></tr>
+    <tr><td>A copy of any save file the game could not read</td><td>kept so a damaged save can be recovered rather than silently overwritten</td></tr>
+    <tr><td>Whether you have bought the full career unlock</td><td>stored in encrypted app storage so you can play offline. It is a yes/no flag and nothing more.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Uninstalling the app removes all of it. Starting a new game from the in-game settings clears
+your progress on the device.</p>
+
+<h2>2. Cloud save</h2>
+
+<p>So that you do not lose your club, the app backs your save up to a hosted database provided by
+Supabase. This happens <strong>automatically when the app starts</strong> and after your game
+saves.</p>
+
+<ul>
+  <li>The app signs in <strong>anonymously</strong>. No email address, password, name or Google
+      account details are used or requested.</li>
+  <li>Anonymous sign-in creates a random identifier for your installation. That identifier is the
+      only thing linking a save to a device.</li>
+  <li>What is stored is your <strong>game save</strong> — club name, badge, squad, collection,
+      coins, season, career record and settings. Nothing else.</li>
+  <li>Your club name is text you type yourself. Please do not put your real name, school, address
+      or anything else personal into it.</li>
+</ul>
+
+<div class="box note">
+  <p><strong>Please read this if you are a parent.</strong> The cloud backup is on by default and
+  is not something the player switches on. It stores game progress under a random identifier, not
+  a person. If you would rather nothing at all left the device, the app can be used with the
+  device offline — the game is fully playable without a network connection.</p>
+</div>
+
+<h2>3. The World Board (optional leaderboard)</h2>
+
+<p>The app includes an optional public leaderboard. <strong>It is off unless you deliberately turn
+it on</strong> and agree to publish.</p>
+
+<p>If you turn it on, these are published: your club name, club badge and colour, squad rating,
+matches played, wins, draws, seasons completed, titles, cups, a shareable squad code, and the
+anonymous identifier described above. Club names are filtered before publication.</p>
+
+<p><strong>Turning sharing off deletes your row</strong> — it does not merely stop updating it.</p>
+
+<h2>4. Sending feedback</h2>
+
+<p>The app has a feedback box. It sends something only when you write a message and press Send.</p>
+
+<p>These fields are sent, and no others: the feedback type you choose, your message, the app build
+and version number, which screen you were on, your browser engine and device type as reported by
+the system, and the window size. <strong>Your save, save code, squad, collection, club name and
+contact details are never included.</strong> Because no contact detail is sent, we cannot reply to
+feedback — please use the email address in section 8 if you need an answer.</p>
+
+<h2>5. Purchases</h2>
+
+<p>The app is free to download and the whole of your first season is free. Continuing into Season
+2 requires a single permanent purchase.</p>
+
+<ul>
+  <li>The purchase is handled <strong>entirely by Google Play</strong>. Payment is processed by
+      Google, under
+      <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.</li>
+  <li><strong>The app never sees or stores your payment details</strong> — no card number, no
+      billing address, no name.</li>
+  <li>All the app receives from Google is whether the unlock has been purchased.</li>
+  <li>It is a one-off purchase. It is <strong>not a subscription</strong>, it never renews, and it
+      cannot charge you automatically.</li>
+  <li>The purchase unlocks the rest of the career. It buys no cards, coins or advantages.</li>
+</ul>
+
+<h2>6. What the app does <em>not</em> do</h2>
+
+<ul>
+  <li>No adverts, and no advertising networks.</li>
+  <li>No analytics, telemetry, crash-reporting or tracking software of any kind.</li>
+  <li>No advertising ID, device ID, IMEI, phone number or MAC address is collected.</li>
+  <li>No location, contacts, camera, microphone, photos, files or calendar access. The app
+      requests no runtime permissions.</li>
+  <li>No account, sign-up, email address or password.</li>
+  <li>Nothing is sold, rented or shared with advertisers or data brokers.</li>
+</ul>
+
+<p>The app declares one permission, <code>com.android.vending.BILLING</code>, which exists solely
+so Google Play can process the optional purchase.</p>
+
+<h2>7. Children</h2>
+
+<p>The game is suitable for children and contains no adverts and no manipulative monetisation. It
+does not knowingly collect personal information from anyone, including children. The purchase
+screen asks the player to check with a grown-up before buying. Parents can control or disable
+purchases using Google Play's parental controls.</p>
+
+<h2>8. Deleting your data, and contacting us</h2>
+
+<h3>What you can delete yourself</h3>
+<ul>
+  <li><strong>Everything on the device</strong> — uninstall the app, or start a new game from the
+      in-game settings.</li>
+  <li><strong>Your leaderboard entry</strong> — turn World Board sharing off in the game. The row
+      is deleted.</li>
+</ul>
+
+<h3>What to ask us to delete</h3>
+<p>There is currently no in-app button that deletes your cloud save or a feedback message from our
+records. To have either removed, email the address below. Because sign-in is anonymous, please
+include your club name and, if you can, your squad code from the World Board panel, so the right
+record can be found. We will confirm once it is done.</p>
+
+<div class="box key">
+  <p><strong>Contact:</strong>
+  <a href="mailto:buckminsterinteractive@gmail.com">buckminsterinteractive@gmail.com</a><br>
+  Buckminster Interactive, United Kingdom<br>
+  App: Play Pocket Manager — <code>com.buckminsterinteractive.playpocketmanager</code></p>
+</div>
+
+<h2>9. Where data is held</h2>
+
+<p>Cloud saves, leaderboard entries and feedback are held by Supabase, our hosting provider, and
+are protected by row-level access rules so that one player cannot read another's save. Purchases
+are handled by Google. We do not transfer data to anyone else.</p>
+
+<h2>10. Changes to this policy</h2>
+
+<p>If what the app collects changes, this page will be updated and the date at the top will
+change. Material changes will be noted in the app's release notes.</p>
+
+<footer>
+  <p>Play Pocket Manager is an independent game. Player and club names in the game are used for
+  identification in a non-commercial, fan capacity and imply no endorsement.</p>
+</footer>
+
+</div>
+</body>
+</html>
