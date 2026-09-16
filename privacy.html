@@ -64,7 +64,7 @@
 <header>
   <h1>Privacy Policy</h1>
   <p class="sub"><strong>Play Pocket Manager</strong> for Android · Buckminster Interactive<br>
-  Last updated 19 August 2026</p>
+  Last updated 16 September 2026</p>
 </header>
 
 <p>Play Pocket Manager is a single-player football card game. This policy explains, plainly, what
@@ -73,15 +73,16 @@ the Android app stores, what it sends, and what you can do about it.</p>
 <div class="box key">
   <p><strong>The short version.</strong> The app shows no adverts, contains no analytics or
   tracking software, and asks for no account, name, email address or permissions. Your game is
-  saved on your device. It is also backed up automatically to an anonymous cloud save so you do
-  not lose your club. There is one optional purchase, handled entirely by Google Play — we never
-  see your card details.</p>
+  saved on your device. <strong>Cloud backup is your choice</strong>: the first time you open the
+  app it asks, and if you say no, your game stays on your phone and nothing is sent. There is one
+  optional purchase, handled entirely by Google Play — we never see your card details.</p>
 </div>
 
 <h2>1. What is stored on your device</h2>
 
-<p>Your progress is kept in the app's own local storage. It never leaves your device except
-through the cloud save described in section 2.</p>
+<p>Your progress is kept in the app's own local storage. It leaves your device only if you choose
+to: cloud backup (section 2), sharing your club on the World Board (section 3), or a feedback
+message you send (section 4).</p>
 
 <div class="tw">
 <table>
@@ -89,6 +90,7 @@ through the cloud save described in section 2.</p>
   <tbody>
     <tr><td>Your club, squad, card collection, coins, season and career history</td><td>so the game can continue where you left off</td></tr>
     <tr><td>Your settings — sound, music, theme, layout, bigger text, reduce motion</td><td>so your choices persist</td></tr>
+    <tr><td>Whether you chose to turn cloud backup on or off</td><td>so you are asked once, not every time. It is kept on this device only and is never included in a save code.</td></tr>
     <tr><td>A local play log of in-game events</td><td>used only for diagnosing problems on your own device. <strong>It is never transmitted.</strong></td></tr>
     <tr><td>A copy of any save file the game could not read</td><td>kept so a damaged save can be recovered rather than silently overwritten</td></tr>
     <tr><td>Whether you have bought the full career unlock</td><td>stored in encrypted app storage so you can play offline. It is a yes/no flag and nothing more.</td></tr>
@@ -101,26 +103,31 @@ your progress on the device.</p>
 
 <h2>2. Cloud save</h2>
 
-<p>So that you do not lose your club, the app backs your save up to a hosted database provided by
-Supabase. This happens <strong>automatically when the app starts</strong> and after your game
-saves.</p>
+<p>Cloud backup keeps a copy of your club so you do not lose it if you change or lose your phone.
+<strong>It is off until you turn it on.</strong> The first time you open the app, it asks:
+<em>Back up my club</em> or <em>Keep it on this phone</em>. Neither is chosen for you.</p>
 
 <ul>
+  <li><strong>If you choose to keep it on your phone</strong>, nothing about your save is sent
+      anywhere, and no identifier is created for you.</li>
+  <li><strong>If you turn it on</strong>, the app backs your save up to a hosted database provided
+      by Supabase when the app starts and after your game saves.</li>
   <li>The app signs in <strong>anonymously</strong>. No email address, password, name or Google
-      account details are used or requested.</li>
-  <li>Anonymous sign-in creates a random identifier for your installation. That identifier is the
-      only thing linking a save to a device.</li>
+      account details are used or requested. Anonymous sign-in creates a random identifier, and
+      that identifier is the only thing linking a save to a device.</li>
   <li>What is stored is your <strong>game save</strong> — club name, badge, squad, collection,
       coins, season, career record and settings. Nothing else.</li>
   <li>Your club name is text you type yourself. Please do not put your real name, school, address
       or anything else personal into it.</li>
+  <li>You can change your mind at any time in <strong>⚙️ Settings → ☁️ Cloud backup</strong>.
+      Turning it off <strong>deletes your cloud copy</strong> as well as stopping future backups.</li>
 </ul>
 
 <div class="box note">
-  <p><strong>Please read this if you are a parent.</strong> The cloud backup is on by default and
-  is not something the player switches on. It stores game progress under a random identifier, not
-  a person. If you would rather nothing at all left the device, the app can be used with the
-  device offline — the game is fully playable without a network connection.</p>
+  <p><strong>Please read this if you are a parent.</strong> Cloud backup is off unless the player
+  turns it on, and the app explains it before asking. If it is on, it stores game progress under a
+  random identifier, not a person. You can check or change the choice in Settings, and the game is
+  fully playable with cloud backup off and without a network connection.</p>
 </div>
 
 <h2>3. The World Board (optional leaderboard)</h2>
@@ -129,8 +136,11 @@ saves.</p>
 it on</strong> and agree to publish.</p>
 
 <p>If you turn it on, these are published: your club name, club badge and colour, squad rating,
-matches played, wins, draws, seasons completed, titles, cups, a shareable squad code, and the
-anonymous identifier described above. Club names are filtered before publication.</p>
+matches played, wins, draws, seasons completed, titles, cups, a shareable squad code, and an
+anonymous identifier. That identifier is created when you turn sharing on, and your save is not
+uploaded unless you have also turned cloud backup on. Club names are filtered before publication.</p>
+
+<p>You can look at the World Board without being on it. Looking sends nothing that identifies you.</p>
 
 <p><strong>Turning sharing off deletes your row</strong> — it does not merely stop updating it.</p>
 
@@ -189,15 +199,18 @@ purchases using Google Play's parental controls.</p>
 <ul>
   <li><strong>Everything on the device</strong> — uninstall the app, or start a new game from the
       in-game settings.</li>
+  <li><strong>Your cloud backup</strong> — ⚙️ Settings → ☁️ Cloud backup → <em>Turn off and delete
+      my cloud save</em>. This needs an internet connection at the time.</li>
   <li><strong>Your leaderboard entry</strong> — turn World Board sharing off in the game. The row
       is deleted.</li>
 </ul>
 
 <h3>What to ask us to delete</h3>
-<p>There is currently no in-app button that deletes your cloud save or a feedback message from our
-records. To have either removed, email the address below. Because sign-in is anonymous, please
-include your club name and, if you can, your squad code from the World Board panel, so the right
-record can be found. We will confirm once it is done.</p>
+<p>Feedback messages cannot be deleted from inside the app. Nor can a cloud save if you uninstalled
+the app without turning cloud backup off first, because the anonymous identifier is removed with
+the app. To have either removed, email the address below. Please include your club name and, if you
+can, your squad code from the World Board panel, so the right record can be found. We will confirm
+once it is done.</p>
 
 <div class="box key">
   <p><strong>Contact:</strong>
@@ -212,7 +225,15 @@ record can be found. We will confirm once it is done.</p>
 are protected by row-level access rules so that one player cannot read another's save. Purchases
 are handled by Google. We do not transfer data to anyone else.</p>
 
-<h2>10. Changes to this policy</h2>
+<h2>10. The Steam edition</h2>
+
+<p>This policy is written for the Android app. The <strong>Steam edition for Windows</strong> is
+simpler: it makes <strong>no network connections of its own</strong>. It has no cloud backup, does
+not publish to the World Board and cannot send feedback. Your club is saved only on your computer.
+If you choose to open a link, such as the review page, it opens in your web browser. Buying the game
+on Steam is handled by Valve.</p>
+
+<h2>11. Changes to this policy</h2>
 
 <p>If what the app collects changes, this page will be updated and the date at the top will
 change. Material changes will be noted in the app's release notes.</p>
