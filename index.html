@@ -1,80 +1,81 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Play Pocket Manager</title>
-<meta name="description" content="Play Pocket Manager — a six-a-side football card game for Android. Privacy policy and contact.">
-<meta name="robots" content="index, follow">
-<style>
-  :root{
-    --ground:#f4f6f7; --panel:#ffffff; --ink:#15191c; --ink2:#3d4750;
-    --dim:#5d6970; --rule:#d5dde1; --accent:#11633f; --accent-soft:#e2efe9;
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --ground:#14171a; --panel:#1b1f23; --ink:#eef2f4; --ink2:#c4ccd1;
-      --dim:#94a0a7; --rule:#2e353b; --accent:#5cc294; --accent-soft:#163024;
-    }
-  }
-  :root[data-theme="dark"]{
-    --ground:#14171a; --panel:#1b1f23; --ink:#eef2f4; --ink2:#c4ccd1;
-    --dim:#94a0a7; --rule:#2e353b; --accent:#5cc294; --accent-soft:#163024;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0; background:var(--ground); color:var(--ink);
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size:17px; line-height:1.65; -webkit-text-size-adjust:100%;
-    display:flex; align-items:center; justify-content:center; min-height:100vh;
-  }
-  .card{
-    max-width:560px; width:100%; margin:0 auto;
-    padding:clamp(24px,6vw,44px) clamp(20px,5vw,40px);
-  }
-  h1{font-size:clamp(28px,6vw,38px); line-height:1.1; margin:0 0 6px; letter-spacing:-.02em;}
-  .tag{color:var(--dim); margin:0 0 26px; font-size:16px;}
-  p{color:var(--ink2);}
-  ul{list-style:none; padding:0; margin:26px 0 0;}
-  li{margin:0 0 10px;}
-  a.link{
-    display:block; background:var(--panel); border:1px solid var(--rule);
-    border-left:4px solid var(--accent); border-radius:10px;
-    padding:14px 16px; text-decoration:none; color:var(--ink); font-weight:600;
-  }
-  a.link:hover{border-color:var(--accent);}
-  a.link:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
-  a.link span{display:block; font-weight:400; font-size:14px; color:var(--dim); margin-top:2px;}
-  footer{margin-top:30px; padding-top:16px; border-top:1px solid var(--rule);
-         color:var(--dim); font-size:14px;}
-  footer a{color:var(--accent);}
-</style>
+<title>Buckminster Interactive</title>
+<meta name="description" content="Buckminster Interactive is a small independent games studio in the United Kingdom, maker of Play Pocket Manager.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800&family=Nunito:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="site.css">
+
 </head>
 <body>
-<main class="card">
-  <h1>Play Pocket Manager</h1>
-  <p class="tag">A six-a-side football card game for Android.</p>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Buckminster Interactive</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#games">Games</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <p>Collect footballers, build a squad, manage chemistry and formation, play matches and climb
-  the pyramid. There are no adverts and nothing to buy inside the game — no card packs, no
-  coins, no advantages. Your first season is free, and one optional permanent unlock continues
-  the career.</p>
+<main>
+  <section>
+    <div class="wrap stack">
+      <h1>Buckminster Interactive</h1>
+      <p>A small independent games studio in the United Kingdom. We make games that are fair to play: no adverts, no paid loot, nothing that nags you to come back.</p>
+    </div>
+  </section>
 
-  <ul>
-    <li>
-      <a class="link" href="privacy.html">Privacy Policy
-        <span>What the app stores, what it sends, and how to have data removed.</span></a>
-    </li>
-    <li>
-      <a class="link" href="mailto:buckminsterinteractive@gmail.com">Contact
-        <span>buckminsterinteractive@gmail.com</span></a>
-    </li>
-  </ul>
+  <section id="games">
+    <div class="wrap stack">
+      <h2>Games</h2>
+      <div class="game">
+        <img src="ppm-logo.webp" width="720" height="296" alt="Play Pocket Manager logo">
+        <div>
+          <h3>Play Pocket Manager</h3>
+          <p>A football sticker album and a six-a-side management game in one. Open packs, fill your album, pick your best six and take your club up through the divisions and the Pocket Cup.</p>
+          <ul class="facts">
+            <li><strong>Android:</strong> free first season, one optional unlock to carry on</li>
+            <li><strong>PC:</strong> coming to Steam</li>
+            <li><strong>Browser:</strong> free first-season demo on itch.io</li>
+          </ul>
+          <div class="btns">
+            <a class="btn main" href="https://play.google.com/store/apps/details?id=com.buckminsterinteractive.playpocketmanager">Google Play</a>
+            <a class="btn" href="https://store.steampowered.com/app/5247420/Play_Pocket_Manager/">Wishlist on Steam</a>
+            <a class="btn" href="https://playpocketmanager.itch.io/play-pocket-manager">Play the demo</a>
+          </div>
+          <p class="small soft"><a href="privacy.html">Privacy</a> · <a href="support.html">Support</a> · <a href="legal.html">Legal</a> · <a href="https://www.reddit.com/r/PocketManagerGame/">r/PocketManagerGame</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>Buckminster Interactive, United Kingdom ·
-    <code>com.buckminsterinteractive.playpocketmanager</code></p>
-  </footer>
+  <section id="about">
+    <div class="wrap stack">
+      <h2>About</h2>
+      <p>Buckminster Interactive is one person making games in the UK. The name comes from Buckminster Fuller, the designer of the geodesic dome. The molecule named after him has the same shape as a classic football: 12 pentagons and 20 hexagons.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap stack">
+      <h2>Contact</h2>
+      <p>Support, press and anything else: <strong>buckminsterinteractive@gmail.com</strong></p>
+      <p class="soft">For a data deletion request, include your club name and, if you can, your squad code.</p>
+    </div>
+  </section>
 </main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© 2026 Buckminster Interactive, United Kingdom</span>
+    <span><a href="privacy.html">Privacy</a> · <a href="legal.html">Legal</a> · <a href="support.html">Support</a></span>
+  </div>
+</footer>
 </body>
 </html>
